@@ -114,7 +114,7 @@ class Pipeline():
         ## 2. set patches
         if roi_approach == 'patches':
             sig_processing.set_landmarks(ldmks_list)
-            sig_processing.set_square_patches_side(np.float(patch_size))
+            sig_processing.set_square_patches_side(float(patch_size))
         
         # set sig-processing and skin-processing params
         SignalProcessingParams.RGB_LOW_TH = RGB_LOW_HIGH_TH[0]
